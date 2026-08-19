@@ -1,6 +1,6 @@
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-       LinkedHashSet<Integer> set=new LinkedHashSet<>();
+       HashSet<Integer> set=new HashSet<>();
        for(int num:nums){
         if(set.contains(num)){
             return true;
