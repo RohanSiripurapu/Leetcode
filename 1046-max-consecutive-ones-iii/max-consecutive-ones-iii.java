@@ -3,7 +3,7 @@ class Solution {
         int left=0;
         int n=nums.length;
         int zerocount=0;
-        for(int r=0;r<nums.length;r++){
+        for(int r=0;r<n;r++){
             if(nums[r]==0){
                 zerocount++;
             }
