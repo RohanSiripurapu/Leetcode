@@ -17,6 +17,7 @@ class Solution {
             left++;
             right--;
         }
-        return new String(arr);
+        String result=new String(arr);
+        return result;
     }
 }
