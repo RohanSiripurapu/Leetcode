@@ -3,11 +3,8 @@ class Solution {
       int max=Integer.MIN_VALUE;
       int currsum=0;
       for(int i=0;i<nums.length;i++){
-        currsum+=nums[i];
-        max=Math.max(max,currsum);
-        if(currsum<0){
-            currsum=0;
-        }
+        currsum=Math.max(currsum+nums[i],nums[i]);
+        max=Math.max(currsum,max);
       }
       return max;
     }
