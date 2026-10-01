@@ -8,10 +8,9 @@ class Solution {
             int mid=low+(high-low)/2;
             int row=mid/cols;
             int col=mid%cols;
-            int value=matrix[row][col];
-            if(value==target){
+            if(matrix[row][col]==target){
                 return true;
-            }else if(value<target){
+            }else if(matrix[row][col]<target){
                 low=mid+1;
             }else{
                 high=mid-1;
